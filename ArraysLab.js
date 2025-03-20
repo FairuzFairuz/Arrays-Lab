@@ -235,7 +235,7 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 
 Complete Exercise 15 in the space below:
 */
-
+/*
 const arr1 = [100, 5, 23];
 let sum1 = 0;
 arr1.forEach((num) => {
@@ -262,6 +262,17 @@ arr4.forEach((num) => {
 
 let total = sum1 + sum2 + sum3 + sum4;
 
+// solution above is not the correct method to answer the qn
+*/
+
+let sum = 0;
+for (let i = 0; i < numArrays.length; i++) {
+  for (let j = 0; j < numArrays[i].length; j++) {
+    sum += numArrays[i][j];
+  }
+}
+
+const total = sum;
 console.log("Exercise 15 result:\n", total);
 
-// probably not the best solution
+// answer above is using for loop in a for loop
